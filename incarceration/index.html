@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta charset="utf-8">
+<meta name="description" content="Force Bubble Chart">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>INFO 3300 Project 2</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/odometer-theme-default.css" />
+<link href='http://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="js/datamaps.us.min.js"></script>
+<script src="js/odometer.js"></script>
+
+</head>
+    
+<body>
+
+<!--BEGIN THE MAP VISUALIZATION CONSTRUCTION-->
+<p class="first">State Prison Populations&nbsp;1982-2008</p>
+
+<div id = "yearSVG">
+  <svg class = "timeBarYears" width="600px" height = "20px">
+    <text x ="40" y ="20" fill="black">1982</text>
+    <text x ="77" y ="20" fill="black">1984</text>
+    <text x ="115" y ="20" fill="black">1986</text>
+    <text x ="153" y ="20" fill="black">1988</text>
+    <text x ="190" y ="20" fill="black">1990</text>
+    <text x ="228" y ="20" fill="black">1992</text>
+    <text x ="265" y ="20" fill="black">1994</text>
+    <text x ="303" y ="20" fill="black">1996</text>
+    <text x ="342" y ="20" fill="black">1998</text>
+    <text x ="380" y ="20" fill="black">2000</text>
+    <text x ="417" y ="20" fill="black">2002</text>
+    <text x ="455" y ="20" fill="black">2004</text>
+    <text x ="490" y ="20" fill="black">2006</text>
+    <text x ="530" y ="20" fill="black">2008</text>
+  </svg>
+</div>
+<div id = "timebar">
+<input id="slider" type="range" min=1982 max=2008 step="1" value = "1982" list="settings" oninput ="updateMapAndCost(this.value)">
+<datalist id="settings">
+<option>1982</option>
+<option>1984</option>
+<option>1986</option>
+<option>1988</option>
+<option>1990</option>
+<option>1992</option>
+<option>1994</option>
+<option>1996</option>
+<option>1998</option>
+<option>2000</option>
+<option>2002</option>
+<option>2004</option>
+<option>2006</option>
+<option>2008</option>
+</datalist>
+</div>
+<div id="legend"></div>
+
+<div id="inmateMap"></div>
+
+<script src="js/mapScript.js"></script>
+
+<div id="cashContainer"><div id ="cashDiv" >Cost of Incarceration:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$</div><div id="odometer" class="odometer cashFlow">17,400,000,000</div> <div id="staticCash"></div></div>
+
+<!--END THE MAP VISUALIZATION CONSTRUCTION-->
+
+
+<svg id = "divider" width = "1000" height = "5">
+<line x1="0" y1="1" x2="1000" y2="1" style="stroke:grey;stroke-width:.5"/>
+</svg>
+
+
+<!--BEGIN THE MAP RACE/OFFENSE CONSTRUCTION-->
+
+<p class="second">Mean Time Served by Race and Offense&nbsp;1993-2009</p>
+
+<div id = "yearSVG2">
+  <svg class = "timeBarYears" width="600px" height = "20px">
+    <text x ="40" y ="20" fill="black">1993</text>
+    <text x ="103" y ="20" fill="black">1995</text>
+    <text x ="164" y ="20" fill="black">1997</text>
+    <text x ="224" y ="20" fill="black">1999</text>
+    <text x ="286" y ="20" fill="black">2001</text>
+    <text x ="348" y ="20" fill="black">2003</text>
+    <text x ="410" y ="20" fill="black">2005</text>
+    <text x ="470" y ="20" fill="black">2007</text>
+    <text x ="530" y ="20" fill="black">2009</text>
+  </svg>
+</div>
+<div id = "bar_timebar">
+  <input id="bar_slider" type="range" min=1993 max=2009 step="1" value = "2009" list="years" oninput="changeYear(this.value)">
+  <datalist id="years">
+  <option>1993</option>
+  <option>1994</option>
+  <option>1995</option>
+  <option>1996</option>
+  <option>1997</option>
+  <option>1998</option>
+  <option>1999</option>
+  <option>2000</option>
+  <option>2001</option>
+  <option>2002</option>
+  <option>2003</option>
+  <option>2004</option>
+  <option>2005</option>
+  <option>2006</option>
+  <option>2007</option>
+  <option>2008</option>
+  <option>2009</option>
+  </datalist>
+</div>
+<div id="barChart"></div>
+
+<script src="js/bar_chart.js"></script>
+
+<!--END THE RACE/OFFENSE VISUALIZATION CONSTRUCTION-->
+
+
+
+<svg id = "divider" width = "1000" height = "5">
+<line x1="0" y1="1" x2="1000" y2="1" style="stroke:grey;stroke-width:.5"/>
+</svg>
+
+
+
+<!--BEGIN THE BUBBLE GRAPH VISUALIZATION CONSTRUCTION-->
+
+<p class="third">State Prisons Population Data for 2013 (per 100 inmates) </p>
+
+
+<div id="buttonHolder" >
+  <label class="btn" id="type">
+    <!--Total Population -->
+    <button class="pure-button pure-button-active" name="options"> All </button>
+  </label>
+  
+  <label class="btn" id="race">
+    <!--Race -->
+    <button class="pure-button pure-button-active" name="options"> Race </button>
+  </label>
+  
+  <label class="btn" id="age">
+    <!--Age -->
+    <button class="pure-button pure-button-active" name="options"> Age </button>
+  </label>
+  
+  <label class="btn" id="gender">
+    <!--<Gender -->
+    <button class="pure-button pure-button-active" name="options"> Gender </button>
+  </label>
+  
+  <label class="btn" id="offense">
+    <!--Offense -->
+    <button class="pure-button pure-button-active" name="options"> Offense </button>
+  </label>
+</div>
+
+<div id="demoChart" style="font-size:16pt">
+<script type="text/javascript" src="js/d3-forcebubble.js">
+</script>
+</div>
+
+<!--END THE BUBBLE GRAPH VISUALIZATION CONSTRUCTION-->
+
+
+
+</body>
+</html>

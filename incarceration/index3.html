@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta charset="utf-8">
+<meta name="description" content="Force Bubble Chart">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>INFO 3300 Project 2</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/odometer-theme-default.css" />
+<link href='http://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="js/datamaps.us.min.js"></script>
+<script src="js/odometer.js"></script>
+
+</head>
+    
+<body>
+
+
+<svg id = "divider" width = "1000" height = "5">
+<line x1="0" y1="1" x2="1000" y2="1" style="stroke:grey;stroke-width:.5"/>
+</svg>
+
+<!--BEGIN THE BUBBLE GRAPH VISUALIZATION CONSTRUCTION-->
+
+<p class="third">State Prisons Population Data for 2013 (per 100 inmates) </p>
+
+
+<div id="buttonHolder" >
+  <label class="btn" id="type">
+    <!--Total Population -->
+    <button class="pure-button pure-button-active" name="options"> All </button>
+  </label>
+  
+  <label class="btn" id="race">
+    <!--Race -->
+    <button class="pure-button pure-button-active" name="options"> Race </button>
+  </label>
+  
+  <label class="btn" id="age">
+    <!--Age -->
+    <button class="pure-button pure-button-active" name="options"> Age </button>
+  </label>
+  
+  <label class="btn" id="gender">
+    <!--<Gender -->
+    <button class="pure-button pure-button-active" name="options"> Gender </button>
+  </label>
+  
+  <label class="btn" id="offense">
+    <!--Offense -->
+    <button class="pure-button pure-button-active" name="options"> Offense </button>
+  </label>
+</div>
+
+<div id="demoChart" style="font-size:16pt">
+<script type="text/javascript" src="js/d3-forcebubble.js">
+</script>
+</div>
+
+<!--END THE BUBBLE GRAPH VISUALIZATION CONSTRUCTION-->
+
+
+
+</body>
+</html>

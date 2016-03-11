@@ -1,0 +1,201 @@
+{"AL": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "AK": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "AZ": {
+      "fillKey": "light",
+      "inmatePop": "5"
+  },
+  "AR": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "CA": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "CO": {
+      "fillKey": "midheavy",
+      "inmatePop": "5"
+  },
+  "CT": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "DE": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "FL": {
+      "fillKey": "UNDECIDED",
+      "inmatePop": "29"
+  },
+  "GA": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "HI": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "ID": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "IL": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "IN": {
+      "fillKey": "light",
+      "inmatePop": "11"
+  },
+  "IA": {
+      "fillKey": "midheavy",
+      "inmatePop": "11"
+  },
+  "KS": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "KY": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "LA": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "ME": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "MD": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "MA": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "MI": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "MN": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "MS": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "MO": {
+      "fillKey": "light",
+      "inmatePop": "13"
+  },
+  "MT": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "NE": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "NV": {
+      "fillKey": "midlite",
+      "inmatePop": "32"
+  },
+  "NH": {
+      "fillKey": "midheavy",
+      "inmatePop": "32"
+  },
+  "NJ": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "NM": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "NY": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "NC": {
+      "fillKey": "extreme",
+      "inmatePop": "32"
+  },
+  "ND": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "OH": {
+      "fillKey": "UNDECIDED",
+      "inmatePop": "32"
+  },
+  "OK": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "OR": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "PA": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "RI": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "SC": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "SD": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "TN": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "TX": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "UT": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "VT": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "VA": {
+      "fillKey": "midheavy",
+      "inmatePop": "32"
+  },
+  "WA": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "WV": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  },
+  "WI": {
+      "fillKey": "moderate",
+      "inmatePop": "32"
+  },
+  "WY": {
+      "fillKey": "light",
+      "inmatePop": "32"
+  }
+}

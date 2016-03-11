@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta charset="utf-8">
+<meta name="description" content="Force Bubble Chart">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>INFO 3300 Project 2</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/odometer-theme-default.css" />
+<link href='http://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="js/datamaps.us.min.js"></script>
+<script src="js/odometer.js"></script>
+
+</head>
+    
+<body>
+
+<svg id = "divider" width = "1000" height = "5">
+<line x1="0" y1="1" x2="1000" y2="1" style="stroke:grey;stroke-width:.5"/>
+</svg>
+
+
+<!--BEGIN THE MAP RACE/OFFENSE CONSTRUCTION-->
+
+<p class="second">Mean Time Served by Race and Offense&nbsp;1993-2009</p>
+
+<div id = "yearSVG2">
+  <svg class = "timeBarYears" width="600px" height = "20px">
+    <text x ="40" y ="20" fill="black">1993</text>
+    <text x ="103" y ="20" fill="black">1995</text>
+    <text x ="164" y ="20" fill="black">1997</text>
+    <text x ="224" y ="20" fill="black">1999</text>
+    <text x ="286" y ="20" fill="black">2001</text>
+    <text x ="348" y ="20" fill="black">2003</text>
+    <text x ="410" y ="20" fill="black">2005</text>
+    <text x ="470" y ="20" fill="black">2007</text>
+    <text x ="530" y ="20" fill="black">2009</text>
+  </svg>
+</div>
+<div id = "bar_timebar">
+  <input id="bar_slider" type="range" min=1993 max=2009 step="1" value = "2009" list="years" oninput="changeYear(this.value)">
+  <datalist id="years">
+  <option>1993</option>
+  <option>1994</option>
+  <option>1995</option>
+  <option>1996</option>
+  <option>1997</option>
+  <option>1998</option>
+  <option>1999</option>
+  <option>2000</option>
+  <option>2001</option>
+  <option>2002</option>
+  <option>2003</option>
+  <option>2004</option>
+  <option>2005</option>
+  <option>2006</option>
+  <option>2007</option>
+  <option>2008</option>
+  <option>2009</option>
+  </datalist>
+</div>
+<div id="barChart"></div>
+
+<script src="js/bar_chart.js"></script>
+<script type="text/javascript" src="js/d3-forcebubble.js"></script>
+
+
+<!--END THE RACE/OFFENSE VISUALIZATION CONSTRUCTION-->
+
+</body>
+</html>

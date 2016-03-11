@@ -1,0 +1,53 @@
+.form-group {
+  margin-bottom: 30px;
+  position: relative;
+}
+.form-group input {
+  border-left: none;
+}
+.form-group i {
+  width: 20px;
+  color: black;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.form-group label {
+  margin-left: 56px;
+  background: #fff;
+  padding: 2px 5px;
+  position: absolute;
+  font-size: 12px;
+  font-weight: normal;
+  z-index: 999;
+  margin-top: 15px;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.form-group label.visible {
+  transition: all 0.3s ease-out;
+  opacity: 1;
+  margin-top: -10px;
+}
+/***** just some general styles  *****/
+.footer a {
+  color: #333;
+}
+.footer a:hover {
+  color: #111;
+}
+.footer a i {
+  font-size: 2.3em;
+  margin: 5px;
+}
+.jumbotron p {
+  font-size: 1.3em;
+  margin: bottom:40px;
+}
+.container {
+  margin-top: 80px;
+}
+.form {
+  margin-top: 40px;
+}
+.form .form-control {
+  border-radius: 0;
+}

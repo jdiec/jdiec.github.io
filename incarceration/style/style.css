@@ -1,0 +1,190 @@
+.container {
+	width: 1230px;
+	height: 325px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#inmateMap { 
+	width: 900px;
+	height: 475px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+
+#legend {
+    /*padding: 1.5em 0 0 1.5em;*/
+    padding-left: 50px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+}
+
+li.key {
+    border-top-width: 15px;
+    border-top-style: solid;
+    font-size: .75em;
+    width: 50px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+p {
+ 	font-size: 32px;
+ 	text-align: center;
+ 	margin-right: auto;
+ 	margin-left: auto;
+ 	width: 1000px;
+ 	font-family: 'Asap', sans-serif;
+ }
+
+#timebar {
+	width: 500px;
+	height: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.timeBarYears{
+	font-size: 1em;
+	font-family: "Helvetica Neue", sans-serif;
+}
+
+.first {
+	margin-top: 20px;
+}
+
+.second {
+	margin-top: 55px;
+	margin-bottom: 10px;
+}
+
+.third {
+	margin-top: 80px;
+	margin-bottom: 20px;
+}
+
+#yearSVG {
+	width: 600px;
+	height: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#yearSVG2 {
+	width: 600px;
+	height: 20px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input {
+	display: block;
+	width: 100%;
+}
+
+.cashFlow {
+	font-size: 2em;
+}
+
+#cashDiv {
+	font-size: 2em;
+	font-family: 'Asap', sans-serif;
+  	line-height: 1.1em;
+	width: 345px;
+	height: 37px;
+	float: left;
+}
+
+#cashContainer {
+	width: 570px;
+	height: 37px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 55px;
+}
+
+text {
+	pointer-events: none;
+}
+
+body {font-size: 12px; }
+circle {
+    stroke: white;
+    stroke-width: 2px;
+    opacity: .8;
+  }
+  
+.btn { padding-left: 0px; padding-right: 0px; }  
+.btn-group {
+margin-left: 0px;
+}
+.popover {font-size: 14px;}
+
+.label {width: 200px}
+
+tspan {width: 200px;}
+
+.axis path { fill: none; stroke: black;}
+.axis line { stroke: black; }
+
+.bar {
+  fill: steelblue;
+}
+
+#divider {
+	display: block;
+	width: 1000;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#barChart {
+	width: 1050px;
+	height: 530px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+	padding: 0;
+}
+
+#bar_timebar {
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+}
+
+#demoChart {
+	width: 1360px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#buttonHolder {
+	width: 404px;
+	padding-right: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+#bubbleLabel {
+	padding-top: 20px;
+	padding-bottom:20px;
+	color:black;
+	font-size:20px;
+	width: 539px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#staticCash {
+	display: none;
+	font-size: 2em;
+}
